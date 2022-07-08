@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class = "invoice-container-bg" style = "background-color: rgb(209, 205, 205); height:180vh ; padding-left:80px ; padding-right:80px ; padding-top:10px">
+       <div class="invoice-container" style = "background-color:rgb(233, 250, 250) ;"> 
+        <div class = "header" style = "background-color: rgb(227, 248, 248);  display: flex; height:100%">
+            <div class = "icon-container" style = "background-color:rgb(227, 248, 248) ; flex:1 ;  display:flex ;justify-content:flex-start ; align-items: center ; " >
+              <img src = "logo.png"  alt = "logo" class = "logo" style = "height:10vh ; width:140px ;"/>
+            </div>
+            <div class = "icon-container" style = "flex:1">
+             <div class = "invoice-no-container" style = "display:flex ; flex-direction:column ; align-items:flex-end ; padding:10px">
+                <h1 class = "invoice-heading"style = "margin-top: 15px;">INVOICE</h1>
+                <P class = "invoice-ID" style = "margin-top: 3px;">Invoice No.: <span>6343526</span></P>
+             </div>
+            </div>
+       </div>
+       <div class = "invoice-forms-field-container" style = "background-color: rgb(236, 241, 245); display:flex ; padding:10px ;  ; margin-top:25px" >
+        <div class = "bill-address-container" style = "flex:1 ; background-color:rgb(228, 250, 250)">
+            <h1 class="orgainsation-name">EP SOFT PVT LTD</h1>
+            <div class = "bill-to-ship-to-address-ontainer" style = "display:flex ; justify-content:space-between">
+                 <div class = "bill-to-container " style = "display:flex; flex-direction:column ; line-height:2">
+                    <p class = "bill-to-heading">Bill To</p>
+                    <p class = "bill-to-address">Noida  sector 59, Up</p>
+                 </div>
+                 <div class = "ship-to-container" style = "display:flex; flex-direction:column ;margin-right:18px; line-height:2">
+                    <p class = "ship-to-heading">Bill To</p>
+                    <p class = "ship-to-address">Noida  sector 66, Up</p>
+                 </div>
+            </div>
+        </div>
+        <div class = "bill-due-container" style = "flex:1 ;padding-left:30px; padding-right:40px">
+            <div class = "balance-due-details-container" style = " margin-top:40px ;  ; display:flex ; flex-direction:column">
+                <div class = "date-container" style = "display: flex; flex-direction:row  ">
+                    <p class = "date-heading" style = "flex:1 ; padding:12px">Date</p>
+                     <p class = "dynamic-date" style = "flex:2; background-color:rgb(196, 189, 189); display:flex; justify-content:flex-end ; margin-right:15px;padding:12px">7 july,2022</p>
+                </div>
+                <!-- payment-term -->
+                <div class = "date-container" style = "display: flex; flex-direction:row ; margin-top:10px">
+                    <p class = "date-heading" style = "flex:1 ; padding:12px">payment Terms:</p>
+                     <p class = "dynamic-date" style = "flex:2; background-color:rgb(196, 189, 189); display:flex; justify-content:flex-end ; margin-right:15px; padding:12px">COD</p>
+                </div>
+                <!-- Due date -->
+                <div class = "date-container" style = "display: flex; flex-direction:row ;margin-top:10px">
+                    <p class = "date-heading" style = "flex:1; padding:12px">Due Date:</p>
+                     <p class = "dynamic-date" style = "flex:2; background-color:rgb(196, 189, 189); display:flex; justify-content:flex-end ; margin-right:15px; padding:12px">114 july,2022</p>
+                </div>
+                <!-- Po Number -->
+                <div class = "date-container" style = "display: flex; flex-direction:row ; margin-top:10px">
+                    <p class = "date-heading" style = "flex:1; padding:12px">PO Number:</p>
+                     <p class = "dynamic-date" style = "flex:2; background-color:rgb(196, 189, 189); display:flex; justify-content:flex-end ; margin-right:15px;padding:12px">2152636</p>
+                </div>
+                <!-- Balance-due -->
+                <div class = "date-container" style = "display: flex; flex-direction:row ;  margin-top:10px">
+                    <p class = "date-heading" style = "flex:1;padding:12px ; background-color:rgb(119, 116, 116)">Balance Due</p>
+                     <p class = "dynamic-date" style = "flex:2; background-color:rgb(212, 208, 208); display:flex; justify-content:flex-end ; margin-right:15px; padding:12px">RS 400000</p>
+                </div>
+            </div>
+        </div>
+       </div>
+        <!-- each-data -->
+        <!-- <p class = "each-data" style = "padding:10px">#each data}}{/each}}</p> -->
+        <!-- table -->
+        <table style = "
+        width: 100%; margin-top:10px; padding:10px" >
+            <tr  style = "background-color:rgb(33, 34, 37); color:rgb(133, 130, 130)">
+              <th style = "padding:10px ; width:70% ;text-align:left">Item</th>
+              <th style = "padding:10px; width:10%">Quantity</th>
+              <th style = "padding:10px;  width:10%">Rate</th>
+              <th style = "padding:10px; width:10%" >Amount</th>
+            </tr>
+            <tr style = "background-color:rgb(176, 177, 184);">
+              <td style = " text-align:center; justify-content:center ; align-items:center; padding:10px ;text-align:left">10</td>
+              <td style = " text-align:center; justify-content:center ; align-items:center; padding:10px">10</td>
+              <td style = " text-align:center; justify-content:center ; align-items:center; padding:10px">10</td>
+              <td style = " text-align:center; justify-content:center ; align-items:center; padding:10px">10</td>
+            </tr>
+           
+          </table>
+          <div class = "amount-summary-container"  style = "background-color:rgb(205, 245, 220); display:flex ; padding:10px; ">
+            <div class = "right-side-summary-container" style = "flex:7"></div>
+            <div class = "left-side-summary-container" style = "flex:3 ">
+                       <!-- sub-total -->
+            <div class = "summary-container" style = "flex:2 ; background-color:rgb(219, 219, 241) ;justify-content:flex-end;  padding-left:12px; display: flex; flex-direction:row ;margin-bottom:10px ">
+                <p class = "date-heading" style = "flex:1 ; padding:12px">Subtotal</p>
+                <p class = "dynamic-date" style = "flex:1; display:flex; justify-content:flex-end ;padding:12px">Rs 7000</p>
+            </div>
+              <!-- discount -->
+              <div class = "summary-container" style = "flex:2 ; background-color:rgb(219, 219, 241) ;justify-content:flex-end;  padding-left:17px; display: flex; flex-direction:row  ;margin-bottom:10px">
+                <p class = "date-heading " style = "flex:1 ; padding:12px">Discount(20%)</p>
+                <p class = "dynamic-date" style = "flex:1; background-color:rgb(196, 189, 189); display:flex; justify-content:flex-end ;padding:12px">Rs 2000</p>
+            </div>
+            <!-- tax -->
+            <div class = "summary-container" style = "flex:2 ; background-color:rgb(219, 219, 241) ;justify-content:flex-end;  padding-left:17px; display: flex; flex-direction:row ;margin-bottom:10px ">
+                <p class = "date-heading " style = "flex:1 ; padding:12px">Tax(20%)</p>
+                <p class = "dynamic-date" style = "flex:1; background-color:rgb(196, 189, 189); display:flex; justify-content:flex-end ;padding:12px">Rs 500</p>
+            </div>
+            <!-- shipping -->
+            <div class = "summary-container" style = "flex:2 ; background-color:rgb(219, 219, 241) ;justify-content:flex-end;  padding-left:17px; display: flex; flex-direction:row ;margin-bottom:10px ">
+                <p class = "date-heading " style = "flex:1 ; padding:12px">Shipping</p>
+                <p class = "dynamic-date" style = "flex:1; background-color:rgb(196, 189, 189); display:flex; justify-content:flex-end ;padding:12px">Rs 100</p>
+            </div>
+            <!-- total -->
+            <div class = "summary-container" style = "flex:2 ; background-color:rgb(219, 219, 241) ;justify-content:flex-end;  padding-left:17px; display: flex; flex-direction:row ;margin-bottom:10px ">
+                <p class = "date-heading " style = "flex:1 ; padding:12px">Total</p>
+                <p class = "dynamic-date" style = "flex:1; background-color:rgb(196, 189, 189); display:flex; justify-content:flex-end ;padding:12px">Rs 8600</p>
+            </div>
+            <!-- Amount-paid -->
+            <div class = "summary-container" style = "flex:2 ; background-color:rgb(219, 219, 241) ;justify-content:flex-end;  padding-left:17px; display: flex; flex-direction:row ;margin-bottom:10px ">
+                <p class = "date-heading " style = "flex:1 ; padding:12px">Amount Paid</p>
+                <p class = "dynamic-date" style = "flex:1; background-color:rgb(196, 189, 189); display:flex; justify-content:flex-end ;padding:12px">Rs 10000</p>
+            </div>
+            </div>
+          
+            </div>
+           <!-- Terms-and-condition -->
+           <div class = "term-condition-section-container" style = "padding:10px">
+            <h1 class = "notes" style = "font-size:19px">Notes</h1>
+            <p class = "notes-desc" style = "font-size:14px">Note description</p>
+            <h1 class = "term-condition " style = "font-size:19px ;margin-top:10px">Terms & Conditions</h1>
+            <p class = "term-condition-desc" style = "font-size:14px">terms And Condition Desription</p>
+           </div>
+          </div>
+       </div>
+
+    </div>
+</body>
+</html>
